@@ -312,7 +312,6 @@ default: { return undefined }}}
                     locales,
                     preserveQueryParams: undefined,
                     siteCanonicalURL: "https://grandgrouprealestate.framer.website",
-                    EditorBar: 
             typeof window !== "undefined" ? (() => {
                 const isBot = /bot|-google|google-|yandex|ia_archiver|crawl|spider/iu.test(navigator.userAgent)
                 if (isBot) {
@@ -340,11 +339,8 @@ default: { return undefined }}}
                         "react-dom": { createPortal },
                     }
 
-                    window.__framer_editorBarDependencies = dependencies
 
-                    const { createEditorBar } = await import("https://framer.com/edit/init.mjs")
                     return {
-                        default: createEditorBar(),
                     }
                 })
             })() : undefined
@@ -359,7 +355,6 @@ default: { return undefined }}}
                 Framer.LibraryFeaturesProvider,
                 {
                     children: content,
-                    value: {advancedSpamProtection: true, customCodeSiteSettings: false, editorBarDisableFrameAncestorsSecurity: false, motionDivToDiv: false, onPageLocalizationSupport: false, onPageMoveTool: false, synchronousNavigationOnDesktop: false, yieldOnTap: false}
                 }
             )
 
